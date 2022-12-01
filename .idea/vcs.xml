@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BgRemove" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Virtual-Changing-Room" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Virtual_Changing_Room" vcs="Git" />
   </component>
 </project>
