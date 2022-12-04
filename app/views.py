@@ -10,6 +10,9 @@ from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
+import os
+
+
 
 class ProducView(View):
     def get(self, request):
@@ -243,3 +246,16 @@ def payment_done(request):
         PlacedOrder(user=user, costumer=costumer, product= item.product, quantity= item.quantity).save()
         item.delete()
     return redirect("orders")
+
+
+
+
+
+
+@login_required
+def trynow(request):
+    
+    
+    
+    os.system('python FilterApply/Camstart.py {}'.format(32))
+    return render(request,'app/trynow.html')

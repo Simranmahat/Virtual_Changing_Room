@@ -29,8 +29,9 @@
         <button type="submit" class="btn btn-primary shadow px-5 py-2">Add to Cart</button>
         </form>
        {% endif %}
-    <a href="{% url 'add-to-cart' %}" class="btn btn-primary shadow px-5 py-2">TRY NOW</a>
-   <a href="{% url 'checkout' %}" class="btn btn-danger shadow px-5 py-2 ms-4">Buy Now</a>
+        <a href="{% url 'trynow' %}" class="btn btn-primary shadow px-5 py-2">TRY NOW</a>
+        
+        <a href="{% url 'checkout' %}" class="btn btn-danger shadow px-5 py-2 ms-4">Buy Now</a>
 
   </div>
  </div>
